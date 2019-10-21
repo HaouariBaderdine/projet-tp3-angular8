@@ -1,0 +1,11 @@
+<h1>Operations de calcul</h1>
+
+<p>Donnez un premier nombre </p><input type ="text" (keyup.enter)="onKeyUp($event)" #text1/>
+<br>
+<p>le carre est : {{carre()}}</p>
+<br>
+<p>Donnez un deuxieme nombre </p><input type="text" (keyup.enter)="onkeyUpe($event)" #text2/>
+<br>
+<button (click)="onAffiche(text1.value,text2.value)"> Somme </button>
+<br/>
+<p> la somme est: {{somme}}</p>

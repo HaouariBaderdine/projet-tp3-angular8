@@ -1,0 +1,7 @@
+<h1>Bonjours aboudda {{nom}} </h1>
+<h3> Taille de votre nom est: {{taille()}}</h3>
+<h3> votre nom devient: {{nom.toUpperCase()}}</h3>
+<h4>{{infos()}}</h4>
+<input type ="text" [value]="nom" [disabled]="actif">
+<input type ="text" value={{nom}} [disabled]="!actif">
+<button bind-disabled="actif"> Afficher</button>

@@ -1,0 +1,7 @@
+<p>patie3 works!</p>
+
+<button  (click)="onAfficher()">Afficher</button>
+<input type ="text" (keyup)="onKeyUp($event)"/>
+<br>
+<input type ="text" #textbox />
+<button (click)="onAfficherContenu(textbox.value)">Afficher</button>

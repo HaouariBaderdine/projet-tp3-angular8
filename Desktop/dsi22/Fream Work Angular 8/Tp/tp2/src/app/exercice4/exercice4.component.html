@@ -1,0 +1,7 @@
+<h1>Produit de 2 nombres</h1>
+
+<p>Donner un 1er nombre: <input type="text" [(ngModel)]="x" #text1/></p>
+<p>Donner un 2éme nombre: <input type="text" [(ngModel)]="y" #text2/></p><br/>
+<button (click)="onAffiche(text1.value,text2.value)">calculer</button>
+<h3>Le produit est {{res}}</h3>
+

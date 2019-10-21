@@ -1,0 +1,5 @@
+<h1>Liste des canditats</h1>
+<img [src]=tab[0].image/><span> Nom :{{tab[0].nom}} </span><input type="checkbox" [disabled]="!tab[0].parti"  #t1/> ;Indépendant Nb Followers: {{tab[0].nb}}   <button (click)="onAffiche(t1.checked)">Follow</button><br/>
+<img [src]=tab[1].image/><span> Nom :{{tab[1].nom}} </span> <input type="checkbox" checked [disabled]="!tab[1].parti"  #t2/> ;Indépendant Nb Followers: {{tab[1].nb}}   <button (click)="onAffiche(t2.checked)">Follow</button><br/>
+<img [src]=tab[2].image/> <span> Nom :{{tab[2].nom}} </span> <input type="checkbox" checked [disabled]="!tab[2].parti"  #t3/> ; Indépendant Nb Followers: {{tab[2].nb}}   <button (click)="onAffiche(t3.checked)">Follow</button><br/>
+<h4>Nombre de canditats Indépendant : {{nb}}</h4>
